@@ -1,6 +1,5 @@
 EESchema Schematic File Version 5
-LIBS:SDWire-cache
-EELAYER 29 0
+EELAYER 30 0
 EELAYER END
 $Descr A3 16535 11693
 encoding utf-8
@@ -13,6 +12,11 @@ Comment1 "Author: Adam Malinowski <a.malinowsk2@partner.samsung.com>"
 Comment2 "Copyright (c) 2016 Samsung Electronics Co., Ltd All Rights Reserved"
 Comment3 ""
 Comment4 ""
+Comment5 ""
+Comment6 ""
+Comment7 ""
+Comment8 ""
+Comment9 ""
 $EndDescr
 Wire Wire Line
 	2750 1250 3450 1250
@@ -121,20 +125,6 @@ $EndComp
 Wire Wire Line
 	4650 1550 4650 1650
 $Comp
-L SDWire:TS3A27518E U5
-U 1 1 58802A33
-P 12100 5600
-F 0 "U5" H 11850 6750 60  0000 C CNN
-F 1 "TS3A27518EPWR" H 12100 4450 60  0000 C CNN
-F 2 "mux-footprints:TSSOP-24" H 12400 5300 60  0001 C CNN
-F 3 "http://www.ti.com/lit/ds/symlink/ts3a27518e.pdf" H 12400 5300 60  0001 C CNN
-F 4 "http://pl.farnell.com/texas-instruments/ts3a27518epwr/ic-6bit-1-of-2-mux-demux-24tssop/dp/1735605" H 12100 5600 60  0001 C CNN "Shop link"
-F 5 "10.7" H 12100 5600 60  0001 C CNN "Price"
-F 6 "TS3A27518EPWR" H 12100 5600 60  0001 C CNN "Symbol"
-	1    12100 5600
-	1    0    0    -1  
-$EndComp
-$Comp
 L SDWire:GND #PWR07
 U 1 1 58802A3A
 P 13400 5400
@@ -148,23 +138,23 @@ $EndComp
 $Comp
 L SDWire:GND #PWR08
 U 1 1 58802A40
-P 12800 6600
-F 0 "#PWR08" H 12800 6350 50  0001 C CNN
-F 1 "GND" H 12800 6450 50  0000 C CNN
-F 2 "" H 12800 6600 60  0000 C CNN
-F 3 "" H 12800 6600 60  0000 C CNN
-	1    12800 6600
+P 12800 6800
+F 0 "#PWR08" H 12800 6550 50  0001 C CNN
+F 1 "GND" H 12800 6650 50  0000 C CNN
+F 2 "" H 12800 6800 60  0000 C CNN
+F 3 "" H 12800 6800 60  0000 C CNN
+	1    12800 6800
 	1    0    0    -1  
 $EndComp
 $Comp
 L SDWire:GND #PWR09
 U 1 1 58802A50
-P 11400 6700
-F 0 "#PWR09" H 11400 6450 50  0001 C CNN
-F 1 "GND" H 11400 6550 50  0000 C CNN
-F 2 "" H 11400 6700 60  0000 C CNN
-F 3 "" H 11400 6700 60  0000 C CNN
-	1    11400 6700
+P 11400 6900
+F 0 "#PWR09" H 11400 6650 50  0001 C CNN
+F 1 "GND" H 11400 6750 50  0000 C CNN
+F 2 "" H 11400 6900 60  0000 C CNN
+F 3 "" H 11400 6900 60  0000 C CNN
+	1    11400 6900
 	-1   0    0    -1  
 $EndComp
 Text Label 10800 4900 0    60   ~ 0
@@ -209,12 +199,12 @@ DAT1_DUT
 $Comp
 L SDWire:+3V3 #PWR012
 U 1 1 58802A83
-P 12800 6300
-F 0 "#PWR012" H 12800 6150 50  0001 C CNN
-F 1 "+3V3" H 12800 6440 50  0000 C CNN
-F 2 "" H 12800 6300 60  0000 C CNN
-F 3 "" H 12800 6300 60  0000 C CNN
-	1    12800 6300
+P 12800 6500
+F 0 "#PWR012" H 12800 6350 50  0001 C CNN
+F 1 "+3V3" H 12800 6640 50  0000 C CNN
+F 2 "" H 12800 6500 60  0000 C CNN
+F 3 "" H 12800 6500 60  0000 C CNN
+	1    12800 6500
 	1    0    0    -1  
 $EndComp
 $Comp
@@ -282,22 +272,18 @@ Wire Wire Line
 Wire Wire Line
 	13450 5300 13400 5300
 Wire Wire Line
-	12700 6500 12800 6500
+	12700 6700 12800 6700
 Wire Wire Line
-	12800 6500 12800 6600
+	12800 6700 12800 6800
 Wire Wire Line
-	12700 6400 12800 6400
+	12700 6600 12800 6600
 Wire Wire Line
-	12800 6400 12800 6300
+	12800 6600 12800 6500
 Wire Wire Line
 	13350 4450 13450 4450
 Wire Wire Line
 	11400 6500 11500 6500
 Connection ~ 11400 6400
-Wire Wire Line
-	11500 6600 11400 6600
-Wire Wire Line
-	11400 6600 11400 6700
 Wire Wire Line
 	11500 6100 10800 6100
 Wire Wire Line
@@ -1076,54 +1062,22 @@ Wire Wire Line
 Wire Wire Line
 	9900 8950 9900 8900
 Connection ~ 9900 8900
-$Comp
-L SDWire:R R6
-U 1 1 58842CE3
-P 8500 8050
-F 0 "R6" V 8400 8200 50  0000 C CNN
-F 1 "27R" V 8400 8000 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 8430 8050 30  0001 C CNN
-F 3 "http://www.tme.eu/pl/Document/f9483914239ddfe8619d910f45cc0572/crcw0402_dbc.pdf" H 8500 8050 30  0001 C CNN
-F 4 "http://www.tme.eu/pl/details/crcw040227r0fktdbc/rezystory-smd-0402/vishay/" V 8500 8050 60  0001 C CNN "Shop link"
-F 5 "CRCW040227R0FKTDBC" H 8500 8050 60  0001 C CNN "Symbol"
-F 6 "0.02447" H 8500 8050 60  0001 C CNN "Price"
-	1    8500 8050
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	8650 8050 9000 8050
+	8550 8050 9000 8050
 Wire Wire Line
 	9000 8050 9000 8150
 Wire Wire Line
 	9000 8150 9200 8150
-$Comp
-L SDWire:R R7
-U 1 1 58843EA0
-P 8500 8350
-F 0 "R7" V 8400 8500 50  0000 C CNN
-F 1 "27R" V 8400 8300 50  0000 C CNN
-F 2 "Resistors_SMD:R_0402" V 8430 8350 30  0001 C CNN
-F 3 "http://www.tme.eu/pl/Document/f9483914239ddfe8619d910f45cc0572/crcw0402_dbc.pdf" H 8500 8350 30  0001 C CNN
-F 4 "http://www.tme.eu/pl/details/crcw040227r0fktdbc/rezystory-smd-0402/vishay/" V 8500 8350 60  0001 C CNN "Shop link"
-F 5 "CRCW040227R0FKTDBC" H 8500 8350 60  0001 C CNN "Symbol"
-F 6 "0.02447" H 8500 8350 60  0001 C CNN "Price"
-	1    8500 8350
-	0    1    1    0   
-$EndComp
 Wire Wire Line
-	8650 8350 9000 8350
+	8550 8350 9000 8350
 Wire Wire Line
 	9000 8350 9000 8250
 Wire Wire Line
 	9000 8250 9200 8250
-Text Label 7000 8050 0    60   ~ 0
+Text Label 8550 8050 0    60   ~ 0
 USB_B-
-Text Label 7000 8350 0    60   ~ 0
+Text Label 8550 8350 0    60   ~ 0
 USB_B+
-Wire Wire Line
-	7000 8350 8100 8350
-Wire Wire Line
-	7000 8050 7650 8050
 $Comp
 L SDWire:+3V3 #PWR036
 U 1 1 588468A0
@@ -1145,66 +1099,6 @@ Wire Wire Line
 	9150 7550 9150 7600
 Wire Wire Line
 	9150 7950 9200 7950
-$Comp
-L SDWire:C C23
-U 1 1 588480F0
-P 8100 8550
-F 0 "C23" H 7950 8700 50  0000 L CNN
-F 1 "47pF" V 8250 8400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 8138 8400 50  0001 C CNN
-F 3 "http://www.tme.eu/pl/Document/e3e731e59cc68b1ab6d46b158bb05733/MURATA_GRM.pdf" H 8100 8550 50  0001 C CNN
-F 4 "http://www.tme.eu/pl/details/grm1555c1h470ja01d/kondensatory-mlcc-smd-0402/murata/" H 8100 8550 60  0001 C CNN "Shop link"
-F 5 "GRM1555C1H470JA01D" H 8100 8550 60  0001 C CNN "Symbol"
-F 6 "0.01687" H 8100 8550 60  0001 C CNN "Price"
-	1    8100 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L SDWire:C C22
-U 1 1 58848C61
-P 7650 8550
-F 0 "C22" H 7500 8700 50  0000 L CNN
-F 1 "47pF" V 7800 8400 50  0000 L CNN
-F 2 "Capacitors_SMD:C_0402" H 7688 8400 50  0001 C CNN
-F 3 "http://www.tme.eu/pl/Document/e3e731e59cc68b1ab6d46b158bb05733/MURATA_GRM.pdf" H 7650 8550 50  0001 C CNN
-F 4 "http://www.tme.eu/pl/details/grm1555c1h470ja01d/kondensatory-mlcc-smd-0402/murata/" H 7650 8550 60  0001 C CNN "Shop link"
-F 5 "GRM1555C1H470JA01D" H 7650 8550 60  0001 C CNN "Symbol"
-F 6 "0.01687" H 7650 8550 60  0001 C CNN "Price"
-	1    7650 8550
-	1    0    0    -1  
-$EndComp
-$Comp
-L SDWire:GND #PWR037
-U 1 1 58848D2C
-P 7650 8800
-F 0 "#PWR037" H 7650 8550 50  0001 C CNN
-F 1 "GND" H 7650 8650 50  0000 C CNN
-F 2 "" H 7650 8800 60  0000 C CNN
-F 3 "" H 7650 8800 60  0000 C CNN
-	1    7650 8800
-	1    0    0    -1  
-$EndComp
-$Comp
-L SDWire:GND #PWR038
-U 1 1 58848DD9
-P 8100 8800
-F 0 "#PWR038" H 8100 8550 50  0001 C CNN
-F 1 "GND" H 8100 8650 50  0000 C CNN
-F 2 "" H 8100 8800 60  0000 C CNN
-F 3 "" H 8100 8800 60  0000 C CNN
-	1    8100 8800
-	1    0    0    -1  
-$EndComp
-Wire Wire Line
-	8100 8800 8100 8700
-Wire Wire Line
-	8100 8400 8100 8350
-Connection ~ 8100 8350
-Wire Wire Line
-	7650 8400 7650 8050
-Connection ~ 7650 8050
-Wire Wire Line
-	7650 8800 7650 8700
 $Comp
 L SDWire:C C24
 U 1 1 58849A1D
@@ -1887,10 +1781,6 @@ Wire Wire Line
 Wire Wire Line
 	9900 8900 10000 8900
 Wire Wire Line
-	8100 8350 8350 8350
-Wire Wire Line
-	7650 8050 8350 8050
-Wire Wire Line
 	9150 7950 9150 8550
 Wire Wire Line
 	9150 7600 9150 7950
@@ -2243,4 +2133,26 @@ Wire Wire Line
 Connection ~ 4450 5200
 Wire Wire Line
 	4450 5200 4750 5200
+Text Notes 10250 7250 0    60   ~ 0
+https://datasheets.maximintegrated.com/en/ds/MAX4996-MAX4996L.pdf
+$Comp
+L SDWire:MAX4996L U5
+U 1 1 5EB1CA73
+P 12100 5600
+F 0 "U5" H 12100 6995 60  0000 C CNN
+F 1 "MAX4996L" H 12100 6888 60  0000 C CNN
+F 2 "SDWire:QFN40P350X350X80-25N" H 12100 6781 60  0000 C CNN
+F 3 "" H 12400 5300 60  0000 C CNN
+	1    12100 5600
+	1    0    0    -1  
+$EndComp
+Wire Wire Line
+	11500 6800 11400 6800
+Wire Wire Line
+	11400 6800 11400 6900
+Wire Wire Line
+	11400 6500 11400 6600
+Wire Wire Line
+	11400 6600 11500 6600
+Connection ~ 11400 6500
 $EndSCHEMATC
