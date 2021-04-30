@@ -208,20 +208,6 @@ F 3 "" H 12800 6500 60  0000 C CNN
 	1    0    0    -1  
 $EndComp
 $Comp
-L SDWire:USDCARD J2
-U 1 1 58802A8A
-P 13950 4900
-F 0 "J2" H 13800 5500 60  0000 C CNN
-F 1 "uSD Socket" H 13950 4350 60  0000 C CNN
-F 2 "mux-footprints:usd-attend" H 13950 4200 60  0001 C CNN
-F 3 "http://www.tme.eu/pl/Document/d9baf2fd66256bac7b840e9a66d44492/112K-TBA0-RA1.pdf" H 13950 4900 60  0001 C CNN
-F 4 "http://www.tme.eu/pl/details/112k-tba0-ra1/zlacza-do-kart/attend/" H 13950 4900 60  0001 C CNN "Shop link"
-F 5 "3.11" H 13950 4900 60  0001 C CNN "Price"
-F 6 "112K-TBA0-RA1" H 13950 4900 60  0001 C CNN "Symbol"
-	1    13950 4900
-	1    0    0    -1  
-$EndComp
-$Comp
 L SDWire:GND #PWR017
 U 1 1 58802AAB
 P 14200 6700
@@ -2155,4 +2141,44 @@ Wire Wire Line
 Wire Wire Line
 	11400 6600 11500 6600
 Connection ~ 11400 6500
+$Comp
+L SDWire:47571-0001 J2
+U 1 1 607CB139
+P 13450 4450
+F 0 "J2" H 13842 4715 50  0000 C CNN
+F 1 "47571-0001" H 13842 4624 50  0000 C CNN
+F 2 "475710001" H 14600 4550 50  0001 L CNN
+F 3 "https://componentsearchengine.com/Datasheets/2/47571-0001.pdf" H 14600 4450 50  0001 L CNN
+F 4 "Memory Card Connectors ASSY FOR TFR HEADER HEADER W/DETECT PIN" H 14600 4350 50  0001 L CNN "Description"
+F 5 "2.3" H 14600 4250 50  0001 L CNN "Height"
+F 6 "538-47571-0001" H 14600 4150 50  0001 L CNN "Mouser Part Number"
+F 7 "https://www.mouser.co.uk/ProductDetail/Molex/47571-0001?qs=qM7ngqbhX5UTJOg9nqKLJQ%3D%3D" H 14600 4050 50  0001 L CNN "Mouser Price/Stock"
+F 8 "Molex" H 14600 3950 50  0001 L CNN "Manufacturer_Name"
+F 9 "47571-0001" H 14600 3850 50  0001 L CNN "Manufacturer_Part_Number"
+	1    13450 4450
+	1    0    0    -1  
+$EndComp
+NoConn ~ 14400 4450
+NoConn ~ 14400 4550
+$Comp
+L SDWire:GND #PWR0101
+U 1 1 607D4C61
+P 14450 5400
+F 0 "#PWR0101" H 14450 5150 50  0001 C CNN
+F 1 "GND" H 14450 5250 50  0000 C CNN
+F 2 "" H 14450 5400 60  0000 C CNN
+F 3 "" H 14450 5400 60  0000 C CNN
+	1    14450 5400
+	-1   0    0    -1  
+$EndComp
+Wire Wire Line
+	14450 5400 14450 5350
+Wire Wire Line
+	14450 5250 14400 5250
+Wire Wire Line
+	14450 5350 14400 5350
+Connection ~ 14450 5350
+Wire Wire Line
+	14450 5350 14450 5250
+NoConn ~ 14400 5150
 $EndSCHEMATC
